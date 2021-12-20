@@ -1,0 +1,19 @@
+<html>
+    
+    <head>
+        <link rel="icon" href="data:,">
+        <title>Hello</title>
+    </head>
+    <body>
+        <h1>This is test.</h1>
+    </body>
+    <script>
+        // document.cookie = "test1=Hello; SameSite=None; Secure";
+        const d = new Date();
+  d.setTime(d.getTime() + (7*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = "user" + "=" + "raja" + ";" + expires + ";path=/";
+        console.log(document.cookie)
+        // console.log(allcookie())
+    </script>
+</html>
